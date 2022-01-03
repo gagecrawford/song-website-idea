@@ -1,4 +1,4 @@
-//button event listeners for create new book, add new book to page, close popup
+//button event listeners for create new song, add new song to page, close popup
 const addBtn = document.querySelector('#addBtn');
 addBtn.addEventListener('click', addSongToLibrary);
 
@@ -34,7 +34,7 @@ function addSongToLibrary() {
     form.reset();
 }
 
-//Creates song visual in browser
+//Creates song info visual in browser
 function render() {
     const display = document.getElementById('Library-container');
     const songs = document.querySelectorAll('.song');
@@ -45,7 +45,7 @@ function render() {
     }
 }
 
-//creats song DOM elements, to use in render();
+//creates song DOM elements, to use in render();
 function createSong(item) {
     const library = document.querySelector('#Library-container');
     const songDiv = document.createElement('div');
