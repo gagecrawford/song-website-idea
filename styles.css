@@ -1,0 +1,167 @@
+body{
+  background-color: goldenrod;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Calibri';
+  font-size: 55px;
+}
+
+#newBtn-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#newBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: solid 3px black;
+}
+
+#Library-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+/* Book and its contents */ 
+.song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 25px;
+  height: 300px;
+  width: 250px;
+  padding: 15px;
+  margin: 20px;
+  background-color: #fbd082;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid 3px;
+}
+
+.artist {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid 3px;
+}
+
+.genre {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid 3px;
+}
+
+button:focus {
+  outline:none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.readBtn { 
+  font-size: 20px;
+  height: 35px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid 3px black;
+}
+
+#removeBtn {
+  font-size: 20px;
+  height: 35px;
+  width: 110px;
+  border-radius: 10px;
+  border: solid 3px black;
+  background-color: #d7d9da;
+}
+
+#addBtn {
+  font-size: 20px;
+  height: 35px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid 3px black;
+}
+
+/* Modal popup box  https://www.w3schools.com/howto/howto_css_modals.asp */
+
+/* The Modal (background) */
+input#title {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  border: solid 3px black;
+}
+input#artist {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  border: solid 3px black;
+}
+input#genre {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  border: solid 3px black;
+}
+
+input[type=checkbox] {
+  
+  transform: scale(2);
+}
+#popUp {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-size: 30px;
+  }
+  
+  /* Modal Content/Box */
+#form {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

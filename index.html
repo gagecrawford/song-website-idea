@@ -1,0 +1,32 @@
+<!Doctype html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+</head>
+<body>
+<h1>Songs Worth Listening To</h1>
+    <div id='newBtn-Container'>
+        <button id='newBtn'>Add New Song</button>
+    </div>
+     <div id="popUp">
+        <form id='form' action='/script.jss'>
+            <span class="close">&times;</span>
+            <ledgend>New Song</ledgend>
+            <div id='textInput'> 
+                <p><input type='text' id='title' name='title' placeholder='Title'></p>
+                <p><input type='text' id='artist' name='artist' placeholder='Artist'></p>
+                <p><input type='text' id='genre' name='genre' placeholder='Genre'></p>
+            </div>
+            <div id='checkBox'>
+                <p><label >On Repeat? </label><input type='checkbox' id='repeat' name='repeat' value='yes'></p>
+            </div>
+            <button type='submit' form='form' id='addBtn'>Add</button>
+        </form>
+    </div>
+    <div id='Library-container'></div>
+
+    <script src="script.jss"></script>
+</body>
+
+</html>
